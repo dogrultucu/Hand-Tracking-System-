@@ -1,0 +1,35 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Local analysis data and large recordings
+results/
+videos/
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.avi
+*.mkv
+*.mpg
+*.mpeg
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
