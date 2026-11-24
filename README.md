@@ -476,7 +476,7 @@ The checked environment used Python 3.10.11, OpenCV 4.13.0, and MediaPipe 0.10.1
 | Playback | Default video encoding is `mp4v`; browser codec support varies. A video may play in a desktop player but fail in the embedded browser. |
 | Batch robustness | No per-video failure recovery or resume mechanism; duplicate stems can overwrite results. |
 | Reproducibility | Most dependencies are not pinned, references are not bundled, and there is no automated regression suite or benchmark dataset. |
-| Distribution | Source code and documentation images are versioned. Full recordings/results and the Python environment are excluded by `.gitignore`; recreate the environment and generate results locally. The inherited MIT license is retained. |
+| Distribution | Source code and documentation images are versioned. Full recordings/results and the Python environment are excluded by `.gitignore`; recreate the environment and generate results locally. Project code is MIT-licensed; template notices are preserved separately in `THIRD_PARTY_NOTICES.md`. |
 
 ## Development priorities
 
@@ -487,7 +487,7 @@ The following items are proposed work, not completed features:
 3. **Establish a measured baseline:** annotate short clips for all intended classes, calculate segment metrics, and separate tuning clips from validation clips.
 4. **Validate action rules:** address camera dependence, frame-rate sensitivity, hard-coded constants, and the lack of grammar matches in existing examples.
 5. **Harden execution:** honor frame limits during rendering, isolate batch failures, avoid output collisions, and add useful progress reporting.
-6. **Make development reproducible:** lock a verified environment, provide representative validation data where distribution is permitted, and add focused regression checks and CI. Version control, ignore rules, and the inherited license are already in place.
+6. **Make development reproducible:** lock a verified environment, provide representative validation data where distribution is permitted, and add focused regression checks and CI. Version control, ignore rules, the project MIT license, and separate third-party notices are already in place.
 7. **Extend after validation:** consider richer annotation workflows, threshold sweeps, object context, or supervised temporal models based on measured needs.
 
 ## Troubleshooting
@@ -531,4 +531,6 @@ The implementation uses these projects and libraries:
 
 ## License
 
-See [LICENSE](LICENSE) for the MIT license inherited from the repository template. Its original copyright notice is retained. Third-party dependencies remain subject to their respective licenses.
+The HandTrackingSystem project implementation is licensed under the [MIT License](LICENSE), copyright (c) 2026 Onur Berk Doğrultucu.
+
+The original repository-template license notice is preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and applies to material originating from that template. Third-party dependencies remain subject to their respective licenses.
