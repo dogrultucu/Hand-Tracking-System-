@@ -22,14 +22,13 @@ HandTrackingSystem analyzes hand posture and motion in prerecorded videos. It tr
 - [Troubleshooting](#troubleshooting)
 - [Authors](#authors)
 - [References](#references)
-- [Credits](#credits)
 - [License](#license)
 
 ## Overview
 
 This project explores how handcraft activity can be described through visible hand posture, motion, and coordination. It separates landmark tracking from interpretable action rules so that predictions can be inspected, compared, and corrected during review.
 
-The repository uses the [MRAC-IAAC student project submission template](https://github.com/MRAC-IAAC/student-project-name). Template and structure credits are retained in [Credits](#credits). The implemented workflow is a local Python video-analysis pipeline; the template's example ROS and Docker instructions do not apply to this project.
+The implemented workflow is a local Python video-analysis pipeline for prerecorded handcraft videos.
 
 ## Demo
 
@@ -477,7 +476,7 @@ The checked environment used Python 3.10.11, OpenCV 4.13.0, and MediaPipe 0.10.1
 | Playback | Default video encoding is `mp4v`; browser codec support varies. A video may play in a desktop player but fail in the embedded browser. |
 | Batch robustness | No per-video failure recovery or resume mechanism; duplicate stems can overwrite results. |
 | Reproducibility | Most dependencies are not pinned, references are not bundled, and there is no automated regression suite or benchmark dataset. |
-| Distribution | Source code and documentation images are versioned. Full recordings/results and the Python environment are excluded by `.gitignore`; recreate the environment and generate results locally. The inherited MIT license and template acknowledgements are retained. |
+| Distribution | Source code and documentation images are versioned. Full recordings/results and the Python environment are excluded by `.gitignore`; recreate the environment and generate results locally. The inherited MIT license is retained. |
 
 ## Development priorities
 
@@ -529,16 +528,6 @@ The implementation uses these projects and libraries:
 - [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [SciPy](https://scipy.org/) — numerical operations and data processing.
 - [Matplotlib](https://matplotlib.org/) — exported diagnostic plots.
 - [Streamlit](https://streamlit.io/) and [Plotly](https://plotly.com/python/) — local review workspace and interactive charts.
-
-## Credits
-
-Repository layout adapted from the [MRAC-IAAC Group Project Repository Submission Template](https://github.com/MRAC-IAAC/student-project-name). The original template acknowledgements are preserved below. These credits concern the template and repository structure; project implementation is listed under Authors.
-
-<!-- DO NOT REMOVE: original template acknowledgements -->
-#### Acknowledgements
-
-- Creation of GitHub template: [Marita Georganta](https://www.linkedin.com/in/marita-georganta/) - Robotic Sensing Expert
-- Creation of MRAC-IAAC GitHub Structure: [Huanyu Li](https://www.linkedin.com/in/huanyu-li-457590268/) - Robotic Researcher
 
 ## License
 
